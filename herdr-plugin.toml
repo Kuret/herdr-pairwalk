@@ -1,0 +1,36 @@
+id = "rick.pairwalk"
+name = "Pairwalk"
+version = "0.3.0"
+min_herdr_version = "0.7.4"
+description = "One-hotkey pairwalk: worktree + Fable orchestrator popup, OMP executor with escalation ladder; worktree-bound agent names"
+platforms = ["macos", "linux"]
+
+[[actions]]
+id = "start"
+title = "Pairwalk: new task in worktree"
+contexts = ["pane"]
+command = ["bash", "pairwalk.sh", "open-dialog"]
+
+[[actions]]
+id = "spawn"
+title = "Pairwalk: spawn executor for PLAN.md"
+contexts = ["pane"]
+command = ["bash", "pairwalk.sh", "spawn"]
+
+[[actions]]
+id = "release"
+title = "Pairwalk: release executor"
+contexts = ["pane"]
+command = ["bash", "pairwalk.sh", "release"]
+
+[[actions]]
+id = "status"
+title = "Pairwalk: status"
+contexts = ["pane"]
+command = ["bash", "pairwalk.sh", "status"]
+
+[[panes]]
+id = "start"
+title = "Pairwalk: new task"
+placement = "popup"
+command = ["bash", "pairwalk.sh", "dialog"]

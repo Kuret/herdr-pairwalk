@@ -1,6 +1,6 @@
 id = "rick.pairwalk"
 name = "Pairwalk"
-version = "0.3.0"
+version = "0.3.1"
 min_herdr_version = "0.7.4"
 description = "One-hotkey pairwalk: worktree + Fable orchestrator popup, OMP executor with escalation ladder; worktree-bound agent names"
 platforms = ["macos", "linux"]

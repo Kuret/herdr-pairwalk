@@ -73,7 +73,7 @@ default `~/.config/herdr/plugins/config/rick.pairwalk/pairwalk.conf`), created o
 
 | Key | Default | Meaning |
 |---|---|---|
-| `MODEL` | `openrouter/z-ai/glm-5.3-flash` | Executor (OMP) model — runs directly, prewalk disabled |
+| `MODEL` | `openrouter/z-ai/glm-5.3-flash:low` | Executor (OMP) model — runs directly, prewalk disabled |
 | `APPROVAL_MODE` | `yolo` | Executor approval mode (`write`/`always-ask` still auto-accepts startup dialogs) |
 | `PLAN_FILE` | `PLAN.md` | Plan contract the orchestrator must write |
 | `DIRECTION` | `right` | Executor split direction |

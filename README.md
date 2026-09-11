@@ -85,7 +85,7 @@ herdr plugin config-dir rick.pairwalk
 
 | Key | Default | Meaning |
 |---|---|---|
-| `MODEL` | `openrouter/z-ai/glm-5.3-flash:low` | Executor (OMP) model. Any model id or OMP alias/role. Prewalk is disabled for the executor — the plan already exists. |
+| `MODEL` | `openrouter/z-ai/glm-5.3-flash:medium` | Executor (OMP) model. Any model id or OMP alias/role. Prewalk is disabled for the executor — the plan already exists. |
 | `APPROVAL_MODE` | `yolo` | Executor approval mode. pairwalk is designed for isolated herdr worktrees; use `write`/`always-ask` if you want more friction. |
 | `PLAN_FILE` | `PLAN.md` | The plan contract the orchestrator must write before spawning. |
 | `DIRECTION` | `right` | Executor split direction (`right`/`down`). |

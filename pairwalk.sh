@@ -17,7 +17,7 @@ set -euo pipefail
 PLUGIN_ID="rick.pairwalk"
 HERDR="${HERDR_BIN_PATH:-herdr}"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-DEFAULT_MODEL="openrouter/z-ai/glm-5.3-flash:low"
+DEFAULT_MODEL="openrouter/z-ai/glm-5.3-flash:medium"
 
 die() { printf 'pairwalk: %s\n' "$*" >&2; exit 1; }
 have() { command -v "$1" >/dev/null 2>&1; }
